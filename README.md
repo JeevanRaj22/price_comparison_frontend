@@ -1,7 +1,7 @@
 # Mobile Price Comparison Tool
 
 A full-stack web application that allows users to compare prices of mobile phones e-commerce websites Amazon and Flipkart, track price changes, and receive email notifications when prices drop.
-**Backend Repository**: [price-comparison-backend](https://github.com/yourusername/price-comparison-backend)
+**Backend Repository**: [price-comparison-backend](https://github.com/JeevanRaj22/price_comparison_backend.git)
 
 ## Table of Contents
 - [Features](#features)
@@ -48,7 +48,3 @@ The Product Details page displays detailed information about a specific product,
 **Wishlist Page:**
 The Wishlist page is designed to display all the products that a user has saved to their wishlist. It fetches the user's wishlist from the server upon loading and displays each product using the WishlistCard component. The page also provides an option to remove items from the wishlist.
 ![wishlist page](Screenshots/wishlist.png)
-
-
-## License
-MIT License
