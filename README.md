@@ -16,9 +16,9 @@ A full-stack web application that allows users to compare prices of mobile phone
 
 ## Tech Stack
 - **Frontend**: React, HTML, CSS, JavaScript
-- **Backend**: Django, Selenium, Celery, Redis
+- **Backend**: Django, Celery, Redis
 - **Database**: PostgreSQL
-- **Web Scraping**: Scrapy, Selenium
+- **Web Scraping**: bs4, Selenium
 
 ## Screenshots
 Registration Page:
