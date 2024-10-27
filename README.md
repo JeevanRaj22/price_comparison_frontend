@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Mobile Price Comparison Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that allows users to compare prices of mobile phones e-commerce websites Amazon and Flipkart, track price changes, and receive email notifications when prices drop.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
+- Real-time price comparison between Amazon and Flipkart.
+- Wishlist for saving favorite products.
+- Automated email notifications for price changes.
+- Daily price update using Celery and Redis.
 
-### `npm start`
+## Tech Stack
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Backend**: Django, Selenium, Celery, Redis
+- **Database**: PostgreSQL
+- **Web Scraping**: Scrapy, Selenium
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
+Registration Page:
+The Register Page enables new users to create an account on the platform by providingnecessary information such as username, email, and password.
+![registration page](Screenshots/register.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Login Page:
+Upon successful login, users are directed to the main interface
+![login page](Screenshots/login.png)
 
-### `npm test`
+Home Page:
+The Home Page serves as the primary interface where users can searchfor productsandview comparative pricing and discount information from e-commerce platforms like Amazon and Flipkart. The page is equipped with a search bar where users can enter the desired mobile phone name.
+![Home page1](Screenshots/search1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It shows real-time product data from Amazon and Flipkart, including prices, RAM, ROM,color.
+![Home page2](Screenshots/search2.png)
 
-### `npm run build`
+Additionally, the Home Page includes a table that displays other relevant productsfoundon these platforms, giving users the option to directly view items on AmazonorFlipkartthrough provided links.
+![Home page3](Screenshots/search3.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Product Details Page:
+The Product Details page displays detailed information about a specific product, fetchedinreal-time from Amazon and Flipkart. When a user navigates to this page, it retrieves the latest product details, including its specifications, offers, and technical details.
+![details page1](Screenshots/details1.png)
+![details page2](Screenshots/details2.png)
+![details page3](Screenshots/details3.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Wishlist Page:
+The Wishlist page is designed to display all the products that a user has saved to their wishlist. It fetches the user's wishlist from the server upon loading and displays each product using the WishlistCard component. The page also provides an option to remove items from the wishlist.
+![wishlist page](Screenshots/wishlist.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+MIT License
